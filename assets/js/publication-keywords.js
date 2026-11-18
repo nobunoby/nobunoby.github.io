@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "Learning-Based Control": "tag-learning-control",
     "Motion Planning": "tag-motion-planning",
     "Robot Perception": "tag-robot-perception",
-    "Autonomous Systems": "tag-autonomous-systems",
     "Drones (UAVs)": "tag-drones",
     "Off-Road Vehicles": "tag-off-road",
     Uncertainty: "tag-uncertainty",
