@@ -20,36 +20,123 @@
   margin: 1rem 0 1.5rem;
 }
 
+/* The same keyword selectors style both filter controls and publication tags. */
 .publication-filter-tags,
 .publication-keyword-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 6px 8px;
   margin-top: 0.5rem;
 }
 
 .publication-filter-tag,
 .publication-keyword-tag {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 1rem;
-  background: var(--global-card-bg-color);
-  color: var(--global-text-color);
-  padding: 0.2rem 0.65rem;
+  --tag-color: 100, 116, 139;
+  --tag-ink: #334155;
+  border: 1px solid rgba(var(--tag-color), 0.4);
+  border-radius: 0.65rem;
+  background: rgba(var(--tag-color), 0.1);
+  color: var(--tag-ink);
+  padding: 4px 10px;
   font-size: 0.85rem;
   line-height: 1.4;
   cursor: pointer;
 }
 
 .publication-keyword-tag {
-  font-size: 0.75rem;
-  padding: 0.1rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+[data-keyword="Learning-Based Control"] {
+  --tag-color: 37, 99, 180;
+  --tag-ink: #16457f;
+}
+
+[data-keyword="Motion Planning"] {
+  --tag-color: 13, 125, 119;
+  --tag-ink: #075b56;
+}
+
+[data-keyword="Robot Perception"] {
+  --tag-color: 124, 75, 170;
+  --tag-ink: #613986;
+}
+
+[data-keyword="Autonomous Systems"] {
+  --tag-color: 100, 116, 139;
+  --tag-ink: #334155;
+}
+
+[data-keyword="Drones (UAVs)"] {
+  --tag-color: 2, 125, 170;
+  --tag-ink: #075b7d;
+}
+
+[data-keyword="Off-Road Vehicles"] {
+  --tag-color: 173, 104, 10;
+  --tag-ink: #784306;
+}
+
+[data-keyword="Uncertainty"] {
+  --tag-color: 183, 67, 87;
+  --tag-ink: #92263f;
+}
+
+[data-keyword="Active Learning"] {
+  --tag-color: 32, 132, 76;
+  --tag-ink: #145c35;
+}
+
+html[data-theme="dark"] .publication-filter-tag,
+html[data-theme="dark"] .publication-keyword-tag {
+  --tag-ink: #cbd5e1;
+  background: rgba(var(--tag-color), 0.2);
+  border-color: rgba(var(--tag-color), 0.7);
+}
+
+html[data-theme="dark"] [data-keyword="Learning-Based Control"] {
+  --tag-ink: #bdd8ff;
+}
+html[data-theme="dark"] [data-keyword="Motion Planning"] {
+  --tag-ink: #a5e8df;
+}
+html[data-theme="dark"] [data-keyword="Robot Perception"] {
+  --tag-ink: #e1c7fa;
+}
+html[data-theme="dark"] [data-keyword="Autonomous Systems"] {
+  --tag-ink: #d3deed;
+}
+html[data-theme="dark"] [data-keyword="Drones (UAVs)"] {
+  --tag-ink: #a7e1fa;
+}
+html[data-theme="dark"] [data-keyword="Off-Road Vehicles"] {
+  --tag-ink: #ffdc9b;
+}
+html[data-theme="dark"] [data-keyword="Uncertainty"] {
+  --tag-ink: #ffc5ce;
+}
+html[data-theme="dark"] [data-keyword="Active Learning"] {
+  --tag-ink: #aaefbf;
 }
 
 .publication-filter-tag[aria-pressed="true"],
 .publication-keyword-tag[aria-pressed="true"] {
-  background: var(--global-theme-color);
-  border-color: var(--global-theme-color);
-  color: var(--global-bg-color);
+  background: rgba(var(--tag-color), 0.24);
+  border-color: var(--tag-ink);
+  box-shadow: inset 0 0 0 1px var(--tag-ink);
+}
+
+html[data-theme="dark"] .publication-filter-tag[aria-pressed="true"],
+html[data-theme="dark"] .publication-keyword-tag[aria-pressed="true"] {
+  background: rgba(var(--tag-color), 0.42);
+  border-color: var(--tag-ink);
+}
+
+.publication-filter-tag[aria-pressed="true"]::before,
+.publication-keyword-tag[aria-pressed="true"]::before {
+  content: "✓";
+  font-weight: 700;
+  margin-right: 0.3em;
 }
 
 .publication-filter-tag:focus-visible,
