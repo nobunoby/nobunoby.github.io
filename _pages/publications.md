@@ -13,12 +13,20 @@ The list below includes peer-reviewed publications and preprints; a preprint is 
 
 {% include bib_search.liquid %}
 
-<div class="publication-keyword-filter" hidden>
-  <label for="publication-keyword">Filter by research area</label>
-  <select id="publication-keyword">
-    <option value="">All research areas</option>
-  </select>
-</div>
+<section class="publication-keyword-filter" aria-label="Filter publications by research area" hidden>
+  <strong>Filter by research area</strong>
+  <div class="publication-filter-tags" role="group" aria-label="Research areas"></div>
+  <div class="publication-filter-options">
+    <fieldset>
+      <legend>Match</legend>
+      <label><input type="radio" name="keyword-mode" value="any" checked> Any selected (OR)</label>
+      <label><input type="radio" name="keyword-mode" value="all"> All selected (AND)</label>
+    </fieldset>
+    <button type="button" class="publication-filter-clear">Clear all</button>
+  </div>
+  <p class="publication-filter-count" role="status" aria-live="polite"></p>
+  <p class="publication-filter-empty" hidden>No publications match the selected filters.</p>
+</section>
 
 {% capture keyword_entries %}{% bibliography --group_by none --template '{{key}}|{{entry.keywords}}' %}{% endcapture %}
 <template id="publication-keyword-data">{{ keyword_entries }}</template>
