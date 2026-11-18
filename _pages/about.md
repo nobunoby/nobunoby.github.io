@@ -9,8 +9,6 @@ profile:
   align: right
   image: profile-photo-crop.jpg
   image_circular: false
-  more_info: >
-    <p>Munich, Germany</p>
 selected_papers: false
 social: true
 announcements:
@@ -18,6 +16,14 @@ announcements:
 latest_posts:
   enabled: false
 ---
+
+<style>
+  .profile img {
+    display: block;
+    width: 66.67%;
+    margin-left: auto;
+  }
+</style>
 
 I am **Nobuaki Aoki**, a PhD student and research assistant at the **Technical University of Munich (TUM)**, Chair of Information-oriented Control. Previously, I was a researcher at Hitachi's Research and Development Group in Japan. My research combines learning-based control, decision-making under uncertainty, and robot learning to develop reliable robotic autonomy.
 
