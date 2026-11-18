@@ -21,7 +21,14 @@ latest_posts:
   .profile img {
     display: block;
     width: 66.67%;
-    margin-left: auto;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 575px) {
+    .profile.float-right {
+      float: none !important;
+      margin-left: 0;
+    }
   }
 </style>
 
