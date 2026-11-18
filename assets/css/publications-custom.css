@@ -1,0 +1,17 @@
+@media (min-width: 576px) {
+  .publications .row > .abbr {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .publications .row > .abbr + div {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+.publications .abbr img.preview {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+}

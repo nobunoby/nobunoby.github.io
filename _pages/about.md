@@ -11,7 +11,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Munich, Germany</p>
-selected_papers: true
+selected_papers: false
 social: true
 announcements:
   enabled: false
@@ -34,3 +34,11 @@ My current work includes Gaussian Process dynamics learning and Model Predictive
 ### SeaClear2.0
 
 In [SeaClear2.0](https://www.seaclear2.eu/), we develop autonomous robotic systems for collecting seafloor litter, extending SeaClear1.0 toward larger and heavier debris. My work focuses on visual servoing for underwater robots: using camera images and object-detection information to compute vehicle control inputs.
+
+<link rel="stylesheet" href="{{ '/assets/css/publications-custom.css' | relative_url }}">
+
+### Publications
+
+<div class="publications">
+{% bibliography --group_by none %}
+</div>
