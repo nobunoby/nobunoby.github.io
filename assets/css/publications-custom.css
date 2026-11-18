@@ -15,3 +15,15 @@
   height: 110px;
   object-fit: contain;
 }
+
+.publication-keyword-filter {
+  margin: 1rem 0;
+}
+
+.publication-keyword-filter label {
+  margin-right: 0.5rem;
+}
+
+.publication-keyword-filter select {
+  max-width: 100%;
+}
