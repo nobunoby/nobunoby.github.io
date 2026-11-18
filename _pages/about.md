@@ -7,7 +7,7 @@ subtitle: >
   <a href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer">Technical University of Munich</a>
 profile:
   align: right
-  image: portrait_tum.jpg
+  image: profile-photo.jpg
   image_circular: false
   more_info: >
     <p>Munich, Germany</p>
