@@ -8,6 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const keywordsByKey = new Map();
   const keywords = new Set();
   const selected = new Set();
+  const keywordClasses = {
+    "Learning-Based Control": "tag-learning-control",
+    "Motion Planning": "tag-motion-planning",
+    "Robot Perception": "tag-robot-perception",
+    "Autonomous Systems": "tag-autonomous-systems",
+    "Drones (UAVs)": "tag-drones",
+    "Off-Road Vehicles": "tag-off-road",
+    Uncertainty: "tag-uncertainty",
+    "Active Learning": "tag-active-learning",
+  };
 
   template.content.querySelectorAll("li").forEach((entry) => {
     const [key, value] = entry.textContent.trim().replace(/^'|'$/g, "").split("|");
@@ -25,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = className;
+    if (keywordClasses[keyword]) button.classList.add(keywordClasses[keyword]);
     button.dataset.keyword = keyword;
     button.textContent = keyword;
     button.setAttribute("aria-pressed", "false");

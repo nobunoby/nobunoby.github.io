@@ -47,42 +47,42 @@
   font-size: 0.8rem;
 }
 
-[data-keyword="Learning-Based Control"] {
+.tag-learning-control {
   --tag-color: 37, 99, 180;
   --tag-ink: #16457f;
 }
 
-[data-keyword="Motion Planning"] {
+.tag-motion-planning {
   --tag-color: 13, 125, 119;
   --tag-ink: #075b56;
 }
 
-[data-keyword="Robot Perception"] {
+.tag-robot-perception {
   --tag-color: 124, 75, 170;
   --tag-ink: #613986;
 }
 
-[data-keyword="Autonomous Systems"] {
+.tag-autonomous-systems {
   --tag-color: 100, 116, 139;
   --tag-ink: #334155;
 }
 
-[data-keyword="Drones (UAVs)"] {
+.tag-drones {
   --tag-color: 2, 125, 170;
   --tag-ink: #075b7d;
 }
 
-[data-keyword="Off-Road Vehicles"] {
+.tag-off-road {
   --tag-color: 173, 104, 10;
   --tag-ink: #784306;
 }
 
-[data-keyword="Uncertainty"] {
+.tag-uncertainty {
   --tag-color: 183, 67, 87;
   --tag-ink: #92263f;
 }
 
-[data-keyword="Active Learning"] {
+.tag-active-learning {
   --tag-color: 32, 132, 76;
   --tag-ink: #145c35;
 }
@@ -94,28 +94,28 @@ html[data-theme="dark"] .publication-keyword-tag {
   border-color: rgba(var(--tag-color), 0.7);
 }
 
-html[data-theme="dark"] [data-keyword="Learning-Based Control"] {
+html[data-theme="dark"] .tag-learning-control {
   --tag-ink: #bdd8ff;
 }
-html[data-theme="dark"] [data-keyword="Motion Planning"] {
+html[data-theme="dark"] .tag-motion-planning {
   --tag-ink: #a5e8df;
 }
-html[data-theme="dark"] [data-keyword="Robot Perception"] {
+html[data-theme="dark"] .tag-robot-perception {
   --tag-ink: #e1c7fa;
 }
-html[data-theme="dark"] [data-keyword="Autonomous Systems"] {
+html[data-theme="dark"] .tag-autonomous-systems {
   --tag-ink: #d3deed;
 }
-html[data-theme="dark"] [data-keyword="Drones (UAVs)"] {
+html[data-theme="dark"] .tag-drones {
   --tag-ink: #a7e1fa;
 }
-html[data-theme="dark"] [data-keyword="Off-Road Vehicles"] {
+html[data-theme="dark"] .tag-off-road {
   --tag-ink: #ffdc9b;
 }
-html[data-theme="dark"] [data-keyword="Uncertainty"] {
+html[data-theme="dark"] .tag-uncertainty {
   --tag-ink: #ffc5ce;
 }
-html[data-theme="dark"] [data-keyword="Active Learning"] {
+html[data-theme="dark"] .tag-active-learning {
   --tag-ink: #aaefbf;
 }
 
