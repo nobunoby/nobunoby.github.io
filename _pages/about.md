@@ -40,5 +40,5 @@ In [SeaClear2.0](https://www.seaclear2.eu/), we develop autonomous robotic syste
 ### Publications
 
 <div class="publications">
-{% bibliography --group_by none %}
+{% bibliography --group_by none --query @*[selected=true]* %}
 </div>
