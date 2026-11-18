@@ -62,11 +62,6 @@
   --tag-ink: #613986;
 }
 
-.tag-autonomous-systems {
-  --tag-color: 100, 116, 139;
-  --tag-ink: #334155;
-}
-
 .tag-drones {
   --tag-color: 2, 125, 170;
   --tag-ink: #075b7d;
@@ -102,9 +97,6 @@ html[data-theme="dark"] .tag-motion-planning {
 }
 html[data-theme="dark"] .tag-robot-perception {
   --tag-ink: #e1c7fa;
-}
-html[data-theme="dark"] .tag-autonomous-systems {
-  --tag-ink: #d3deed;
 }
 html[data-theme="dark"] .tag-drones {
   --tag-ink: #a7e1fa;
