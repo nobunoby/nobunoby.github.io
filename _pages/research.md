@@ -7,6 +7,13 @@ nav: true
 nav_order: 1
 ---
 
+<style>
+  .post article h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+</style>
+
 I study reliable and adaptive robotic autonomy under uncertainty, combining learning-based control, probabilistic modeling, optimization, and robot learning. My established work on Gaussian Process models and sampling-based control provides a foundation for emerging investigations into decision-aware models and policy optimization.
 
 ## Research scope
