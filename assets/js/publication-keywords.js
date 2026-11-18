@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const keywords = new Set();
 
   template.content.querySelectorAll("li").forEach((entry) => {
-    const [key, value] = entry.textContent.trim().split("|");
+    const [key, value] = entry.textContent.trim().replace(/^'|'$/g, "").split("|");
     if (!key || !value) return;
     const tags = value
       .split(",")

@@ -22,7 +22,7 @@ The list below includes peer-reviewed publications and preprints; a preprint is 
 
 {% capture keyword_entries %}{% bibliography --group_by none --template '{{key}}|{{entry.keywords}}' %}{% endcapture %}
 <template id="publication-keyword-data">{{ keyword_entries }}</template>
-<script src="{{ '/assets/js/publication-keywords.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/publication-keywords.js' | relative_url | bust_file_cache }}" defer></script>
 
 <div class="publications">
 {% bibliography %}
