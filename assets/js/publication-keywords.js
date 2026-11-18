@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const selected = new Set();
   const keywordClasses = {
     "Learning-Based Control": "tag-learning-control",
-    "Motion Planning": "tag-motion-planning",
+    Manipulator: "tag-manipulator",
     "Robot Perception": "tag-robot-perception",
     "Drones (UAVs)": "tag-drones",
     "Off-Road Vehicles": "tag-off-road",

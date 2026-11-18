@@ -52,7 +52,7 @@
   --tag-ink: #16457f;
 }
 
-.tag-motion-planning {
+.tag-manipulator {
   --tag-color: 13, 125, 119;
   --tag-ink: #075b56;
 }
@@ -92,7 +92,7 @@ html[data-theme="dark"] .publication-keyword-tag {
 html[data-theme="dark"] .tag-learning-control {
   --tag-ink: #bdd8ff;
 }
-html[data-theme="dark"] .tag-motion-planning {
+html[data-theme="dark"] .tag-manipulator {
   --tag-ink: #a5e8df;
 }
 html[data-theme="dark"] .tag-robot-perception {
