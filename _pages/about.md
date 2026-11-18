@@ -37,7 +37,7 @@ In [SeaClear2.0](https://www.seaclear2.eu/), we develop autonomous robotic syste
 
 <link rel="stylesheet" href="{{ '/assets/css/publications-custom.css' | relative_url }}">
 
-### Publications
+### Selected Publications
 
 <div class="publications">
 {% bibliography --group_by none --query @*[selected=true]* %}
