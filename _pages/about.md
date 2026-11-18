@@ -19,6 +19,14 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .profile img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+  }
+</style>
+
 I am **Nobuaki Aoki**, a PhD student and research assistant at the **Technical University of Munich (TUM)**, Chair of Information-oriented Control. Previously, I was a researcher at Hitachi's Research and Development Group in Japan. My research combines learning-based control, decision-making under uncertainty, and robot learning to develop reliable robotic autonomy.
 
 My current work includes Gaussian Process dynamics learning and Model Predictive Path Integral Control, alongside emerging interests in decision-aware models and differentiable policy optimization. Explore my [research]({{ '/research/' | relative_url }}), [publications]({{ '/publications/' | relative_url }}), and [projects]({{ '/projects/' | relative_url }}).
