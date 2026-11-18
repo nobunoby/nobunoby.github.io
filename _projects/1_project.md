@@ -16,4 +16,4 @@ The work studies **task-oriented information acquisition (ToIA)** in model predi
 
 The approach is evaluated in simulated off-road navigation with heterogeneous terrain. See the [paper](https://arxiv.org/abs/2609.19378) for the formulation, experiments, and comparisons.
 
-*A separate project webpage with additional figures, videos, and code links can be connected here once it is published.*
+_A separate project webpage with additional figures, videos, and code links can be connected here once it is published._
